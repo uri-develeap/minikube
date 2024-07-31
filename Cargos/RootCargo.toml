@@ -1,13 +1,3 @@
-[package]
-name = "hello"
-version = "0.0.0"
-workspace = "../"
-edition = "2021"
-publish = false
-
-[dependencies]
-rocket = { path = "../../core/lib" }
-uri@minik:~/Rocket/examples/hello$ cat ../../Cargo.toml
 [workspace]
 resolver = "2"
 members = [
