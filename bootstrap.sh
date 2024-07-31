@@ -37,9 +37,9 @@ minikube image load hello-world-rust:latest
 
 # Apply Kubernetes configurations
 cd examples/hello
-minikube kubectl -- apply -f minikube/deployment.yaml
-minikube kubectl -- apply -f minikube/service.yaml
-minikube kubectl -- apply -f minikube/hpa.yaml
+minikube kubectl -- apply -f deployment.yaml
+minikube kubectl -- apply -f service.yaml
+minikube kubectl -- apply -f hpa.yaml
 
 # Display the application access URL
 app_url=$(minikube service hello-world-service --url)
