@@ -14,8 +14,8 @@ This repository automates the setup and deployment of the Rocket framework examp
 1. **Clone this repository and navigate into it:**
 
     ```bash
-    git clone https://github.com/1488/miniksetup.git
-    cd miniksetup
+    git clone https://github.com/uri-develeap/minikube.git
+    cd minikube
     ```
 
 2. **Run the bootstrap script:**
