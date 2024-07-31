@@ -11,16 +11,13 @@ This repository automates the setup and deployment of the Rocket framework examp
 
 ## Setup Instructions
 
-1. **Clone this repository and navigate into it:**
+1. **Run the bootstrap script:**
+
+    First, download the `bootstrap.sh` script and run it:
 
     ```bash
-    git clone https://github.com/uri-develeap/minikube.git
-    cd minikube
-    ```
-
-2. **Run the bootstrap script:**
-
-    ```bash
+    curl -O https://raw.githubusercontent.com/uri-develeap/minikube/main/bootstrap.sh
+    chmod +x bootstrap.sh
     ./bootstrap.sh
     ```
 
@@ -34,6 +31,12 @@ This repository automates the setup and deployment of the Rocket framework examp
     - Builds the Docker image for the Rocket `hello` example.
     - Loads the Docker image into Minikube.
     - Applies the Kubernetes deployment and service configurations.
+
+2. **Navigate to the `minikube` directory:**
+
+    ```bash
+    cd minikube
+    ```
 
 ## Repository Contents
 
@@ -83,5 +86,3 @@ Feel free to customize the configurations and scripts according to your needs.
 - Migration to HelmChart
 - Values parametrization
 - SonarQube scanning
-
----
