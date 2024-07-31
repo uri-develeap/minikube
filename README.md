@@ -1,4 +1,4 @@
-# Rocket Minikube Setup
+# Rocket HelloWorld Minikube Setup
 
 ## Purpose
 
@@ -17,7 +17,6 @@ This repository automates the setup and deployment of the Rocket framework examp
 
     ```bash
     curl -O https://raw.githubusercontent.com/uri-develeap/minikube/main/bootstrap.sh
-    chmod +x bootstrap.sh
     ./bootstrap.sh
     ```
 
