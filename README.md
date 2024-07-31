@@ -76,3 +76,9 @@ This repository automates the setup and deployment of the Rocket framework examp
 ---
 
 Feel free to customize the configurations and scripts according to your needs.
+
+---
+ToDO:
+- Migration to HelmChart
+- Values parametrization
+- SonarQube scanning
