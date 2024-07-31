@@ -1,0 +1,33 @@
+[package]
+name = "hello"
+version = "0.0.0"
+workspace = "../"
+edition = "2021"
+publish = false
+
+[dependencies]
+rocket = { path = "../../core/lib" }
+uri@minik:~/Rocket/examples/hello$ cat ../../Cargo.toml
+[workspace]
+resolver = "2"
+members = [
+  "core/lib/",
+  "core/codegen/",
+  "core/http/",
+  "examples/hello"
+]
+
+[workspace.lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(nightly)'] }
+rust_2018_idioms = "warn"
+async_fn_in_trait = "allow"
+refining_impl_trait = "allow"
+# unreachable_pub = "warn"
+# single_use_lifetimes = "warn"
+# missing_docs = "warn"
+
+[workspace.lints.clippy]
+type_complexity = "allow"
+module_inception = "allow"
+multiple_bound_locations = "allow"
+manual_range_contains = "allow"
