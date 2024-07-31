@@ -28,8 +28,9 @@ cp minikube/*.yaml Rocket/examples/hello
 cp minikube/Dockerfile Rocket/examples/hello/Dockerfile
 cp minikube/dockerignore Rocket/.dockerignore
 
+cd Rocket
 # Build Docker image
-docker build --build-arg pkg=hello -t hello-world-rust -f Rocket/examples/hello/Dockerfile .
+docker build --build-arg pkg=hello -t hello-world-rust -f /examples/hello/Dockerfile .
 
 # Load Docker image into Minikube
 minikube image load hello-world-rust:latest
