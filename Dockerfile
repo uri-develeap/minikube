@@ -18,7 +18,7 @@ COPY examples/hello/Rocket.toml /build/examples/hello/
 
 # Build and install the application
 RUN set -eux; \
-    cargo build --verbose --release --manifest-path /build/examples/hello/Cargo.toml; \
+    cargo build --release --manifest-path /build/examples/hello/Cargo.toml; \
     ls -alh /build/examples/target; \
     ls -alh /build/examples/target/release; \
     cp /build/examples/target/release/$pkg ./main
