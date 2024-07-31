@@ -39,9 +39,14 @@ minikube image load hello-world-rust:latest
 # Apply Kubernetes configurations
 cd examples/hello
 minikube kubectl -- apply -f deployment.yaml
+
+sleep 5
+
 minikube kubectl -- apply -f service.yaml
 
 # Wait for the pods to be ready
+
+sleep 5
 
 minikube kubectl -- apply -f hpa.yaml
 
