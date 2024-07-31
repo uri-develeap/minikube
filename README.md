@@ -11,12 +11,17 @@ This repository automates the setup and deployment of the Rocket framework examp
 
 ## Setup Instructions
 
-1. **Run the bootstrap script:**
+1. **Enable sudo for your user on Debian:**
 
+    Follow the instructions [here](https://milq.github.io/enable-sudo-user-account-debian/) to enable sudo for your user account on Debian.
+
+2. **Run the bootstrap script:**
+ 
     First, download the `bootstrap.sh` script and run it:
 
     ```bash
-    curl -O https://raw.githubusercontent.com/uri-develeap/minikube/main/bootstrap.sh
+    wget https://raw.githubusercontent.com/uri-develeap/minikube/main/bootstrap.sh
+    chmod +x bootstrap.sh
     ./bootstrap.sh
     ```
 
@@ -31,7 +36,7 @@ This repository automates the setup and deployment of the Rocket framework examp
     - Loads the Docker image into Minikube.
     - Applies the Kubernetes deployment and service configurations.
 
-2. **Navigate to the `minikube` directory:**
+3. **Navigate to the `minikube` directory:**
 
     ```bash
     cd minikube
