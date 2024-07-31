@@ -27,6 +27,7 @@ cp minikube/Cargos/exampleCargo.toml Rocket/examples/Cargo.toml
 cp minikube/*.yaml Rocket/examples/hello
 cp minikube/Dockerfile Rocket/examples/hello/Dockerfile
 cp minikube/dockerignore Rocket/.dockerignore
+cp minikube/Rocket.toml Rocket/examples/hello/Rocket.toml
 
 cd Rocket
 # Build Docker image
