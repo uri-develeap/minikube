@@ -41,6 +41,7 @@ minikube kubectl -- apply -f deployment.yaml
 minikube kubectl -- apply -f service.yaml
 minikube kubectl -- apply -f hpa.yaml
 
+sleep 5
 # Display the application access URL
 app_url=$(minikube service hello-world-service --url)
 echo "Test application is accessible via this link: wget -qO- ${app_url}/hello/world"
