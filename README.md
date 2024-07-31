@@ -40,6 +40,7 @@ This repository automates the setup and deployment of the Rocket framework examp
 - `bootstrap.sh`: The main script to set up and deploy the Rocket example to Minikube.
 - `deployment.yaml`: Kubernetes deployment configuration.
 - `service.yaml`: Kubernetes service configuration.
+- `hpa.yaml`: Kubernetes Horizontal Pod Autoscaler configuration.
 - `rootCargo.toml`: Custom `Cargo.toml` for the root of the Rocket repository.
 - `exampleCargo.toml`: Custom `Cargo.toml` for the `examples` directory of the Rocket repository.
 
@@ -82,3 +83,5 @@ Feel free to customize the configurations and scripts according to your needs.
 - Migration to HelmChart
 - Values parametrization
 - SonarQube scanning
+
+---

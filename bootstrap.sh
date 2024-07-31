@@ -3,7 +3,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# Update and install docker and git
+# Update and install Docker and Git
 sudo apt update
 sudo apt install -y docker.io git
 
@@ -36,6 +36,8 @@ minikube kubectl -- apply -f minikube/deployment.yaml
 minikube kubectl -- apply -f minikube/service.yaml
 minikube kubectl -- apply -f minikube/hpa.yaml
 
-echo "Test application is accessible via this link: wget -qO- $(minikube service hello-world-service --url)/hello/world"
+# Display the application access URL
+app_url=$(minikube service hello-world-service --url)
+echo "Test application is accessible via this link: wget -qO- ${app_url}/hello/world"
 
-echo "Setup complete. Application is being deployed to Minikube."
+echo "Setup complete. Application has been deployed to Minikube."
