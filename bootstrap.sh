@@ -36,4 +36,6 @@ minikube kubectl -- apply -f minikube/deployment.yaml
 minikube kubectl -- apply -f minikube/service.yaml
 minikube kubectl -- apply -f minikube/hpa.yaml
 
+echo "Test application is accessible via this link: wget -qO- $(minikube service hello-world-service --url)/hello/world"
+
 echo "Setup complete. Application is being deployed to Minikube."
