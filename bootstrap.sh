@@ -22,8 +22,8 @@ git clone https://github.com/rwf2/Rocket.git
 git clone https://github.com/uri-develeap/minikube.git
 
 # Replace Cargo.toml files with custom versions
-cp minikube/rootCargo.toml Rocket/Cargo.toml
-cp minikube/exampleCargo.toml Rocket/examples/Cargo.toml
+cp minikube/Cargos/rootCargo.toml Rocket/Cargo.toml
+cp minikube/Cargis/exampleCargo.toml Rocket/examples/Cargo.toml
 
 # Build Docker image
 docker build --build-arg pkg=hello -t hello-world-rust -f Rocket/examples/hello/Dockerfile .
