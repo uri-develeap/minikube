@@ -5,7 +5,7 @@ set -e
 
 # Update and install Docker and Git
 sudo apt update
-sudo apt install -y docker.io git
+sudo apt install -y docker.io git curl
 
 # Allow non-root user to manage Docker
 sudo chmod 666 /var/run/docker.sock
